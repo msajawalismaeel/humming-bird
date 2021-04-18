@@ -9,9 +9,10 @@ class HomeContentMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Column(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           CourseDetails(),
-          SizedBox(height: 100),
           CallToAction('Join Course'),
         ],
       ),
